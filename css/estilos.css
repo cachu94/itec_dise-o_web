@@ -1,2 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #5100FF;
+}
+
+.pag_inicio header {
+    background-color: #FFD000;
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 50px;
+}
+
+header h1, header h2 {
+    background-color: #FFD000;
+}
+
+header{
+    border: 5px solid #000000;
+    padding: 50px;
+    background-color: #FFD000;
+    text-align: center;
+    font-family: "Krona One", sans-serif;
+}
+
+img {
+    border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    border: 10px inset #FFD000;
+    float: right;
+}
+
+.menu{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.pag_activa{
+    background-color: #0000ff;
+    color: #f0730c;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Fira Sans", sans-serif;
+
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    background-color: #343445;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Fira Sans", sans-serif;
+}

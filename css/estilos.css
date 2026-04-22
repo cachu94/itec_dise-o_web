@@ -25,7 +25,7 @@ header {
     color: #2746F5;
 }
 
-#nombre{
+#nombre_inicio{
     background: #F5D627;
     height: auto;
     width: 700px;
@@ -94,6 +94,12 @@ header {
     -moz-border-radius: 42px 42px 42px 42px;
     background: #f5d627;
     border: 5px dashed #2746f5;
+}
+
+#menu a:hover {
+    background: #2746F5;
+    color: #F5D627;
+    border: 2px solid #2746F5;
 }
 
 /* estilo paginas */
@@ -176,6 +182,12 @@ header {
     border: 5px dashed #2746f5;
 }
 
+#menu_pag a:hover {
+    background: #2746F5;
+    color: #F5D627;
+    border: 2px solid #2746F5;
+}
+
 #info {
     width: 100%;
     height: 900px;
@@ -188,7 +200,7 @@ header {
 #info li {
     font-weight: bold;
     list-style: none;
-    
+    margin: 20px;
 }
 
 #info a {
@@ -214,4 +226,107 @@ p{
     font-size: 20px;
     margin: 10px;
     text-align: justify;
+}
+
+.expe {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #272EF5;
+}
+
+img {
+    background: #272EF5;
+    height: 284px;
+    width: 208px;
+    border-radius: 99px 99px 99px 99px;
+    -webkit-border-radius: 99px 99px 99px 99px;
+    -moz-border-radius: 99px 99px 99px 99px;
+    border: 3px solid #2746f5;
+    overflow: hidden;
+}
+
+.expe form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.expe form label {
+    font-weight: bold;
+    color: #2746F5;
+    margin-top: 10px;
+}
+
+.expe form input[type="text"],
+.expe form input[type="date"],
+.expe form select,
+.expe form textarea {
+    padding: 8px 12px;
+    border: 2px solid #2746F5;
+    border-radius: 8px;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    background: #fffde7;
+    color: #222;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.expe form textarea {
+    height: 100px;
+}
+
+.expe form input[type="submit"] {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2746F5;
+    color: #F5D627;
+    border: none;
+    border-radius: 20px;
+    font-family: "Krona One";
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.expe form input[type="submit"]:hover {
+    background: #F5D627;
+    color: #2746F5;
+    border: 2px solid #2746F5;
+}
+
+.tabla-datos {
+    width: min(760px, 95%);
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fffde7;
+    border: 3px solid #2746F5;
+}
+
+.tabla-datos td {
+    border: 2px solid #2746F5;
+    padding: 12px 14px;
+    text-align: left;
+    color: #272EF5;
+    font-size: 18px;
+}
+
+.tabla-datos td:first-child {
+    width: 36%;
+    font-weight: 700;
+    background: #f8eb89;
+}
+
+.tabla-datos a {
+    color: #2746F5;
+    font-weight: 700;
+}
+
+.domicilio-con-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
 }

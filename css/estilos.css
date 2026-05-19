@@ -1,332 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+:root{
+--color-principal:#7ACC2D;
+--color-fondo:white;
+--color-fuente:#313337;
+/* Tipografía */
+--fuente:'Open Sans', sans-serif;
+--tamanio-normal:12px;
+/* Espaciado */
+--space:10px;
+/* Box shadow */
+--box:0px 0 2px 1px #e6e5e9;
+}
 
 body {
-    background: #000000;
-    font-family: "Fira Sans";
-}
-
-/* estilo index */
-
-#contenido_inicio {
-    width: 1000px;
-    height: 800px;
-    margin: auto;
-    background: #2746f5;
-    background: repeating-radial-gradient(circle farthest-corner at top right, #2746f5 20%, #f5d627 50%, #2746f5 20%);
-    background: -webkit-repeating-radial-gradient(circle farthest-corner at top right, #2746f5 20%, #f5d627 50%, #2746f5 20%);
-    background: -moz-repeating-radial-gradient(circle farthest-corner at top right, #2746f5 20%, #f5d627 50%, #2746f5 20%);
-}
-
-header {
-    background: #F5D627;
-    font-family: "Krona One";
-    font-size: 12px;
-    color: #2746F5;
-}
-
-#nombre_inicio{
-    background: #F5D627;
-    height: auto;
-    width: 700px;
-    text-align: center;
-    float: left;
-    border: 2px solid black;
-    margin: 120px 0px 120px 10px;
-    padding: 10px;
-    border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border: 3px solid #2746f5;
-    }
-
-#foto {
-    background: #272EF5;
-    height: 284px;
-    width: 208px;
-    float: right;
-    text-align: center;
-    margin: 50px 20px ;
-    border-radius: 99px 99px 99px 99px;
-    -webkit-border-radius: 99px 99px 99px 99px;
-    -moz-border-radius: 99px 99px 99px 99px;
-    border: 3px solid #2746f5;
-    /* overflow: hidden; */
-}
-
-#limpiar {
-    clear: both;
-}
-
-#menu {
-    height: 250px;
-    width: 750px;
-    background-color: #F5D627;
-    list-style: none;
-    text-align: center;
-    margin: 50px auto;
-    border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border: 3px solid #2746f5;
-}
-
-#menu li {
-    display: inline-flex;
-}
-
-#menu a {
-    margin: 50px 10px 0px;
-    padding: 20px 10px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    -moz-border-radius: 20px 20px 20px 20px;
-    background: #f5d627;
-    border: 3px solid #2746f5;
-    color: #272EF5;
-}
-
-#menu a[aria-current="page"] {
-    border-radius: 42px 42px 42px 42px;
-    -webkit-border-radius: 42px 42px 42px 42px;
-    -moz-border-radius: 42px 42px 42px 42px;
-    background: #f5d627;
-    border: 5px dashed #2746f5;
-}
-
-#menu a:hover {
-    background: #2746F5;
-    color: #F5D627;
-    border: 2px solid #2746F5;
-}
-
-/* estilo paginas */
-
-#contenido_pag {
-    margin: auto;
-    background: #F5D627;
-}
-
-#nombre_pag{
-    background: #F5D627;
-    height: auto;
-    width: 700px;
-    text-align: center;
-    float: right;
-    border: 2px solid black;
-    margin: 120px 120px 120px 10px;
-    padding: 10px 30px;
-    border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border: 3px solid #2746f5;
-    }
-
-#foto_pag {
-    background: #272EF5;
-    height: 284px;
-    width: 208px;
-    float: left;
-    text-align: center;
-    margin: 50px 50px ;
-    border-radius: 99px 99px 99px 99px;
-    -webkit-border-radius: 99px 99px 99px 99px;
-    -moz-border-radius: 99px 99px 99px 99px;
-    border: 3px solid #2746f5;
-    overflow: hidden;
-}
-#menu_pag {
-    width: 100%;
-    height: auto;
-    margin: 0px 0px 50px 0px;
-    background: #F5D627;
-}
-
-#menu_pag ul {
-    margin: auto 10px;
-    list-style: none;
-    padding: 20px;
-    text-align: center;
-    border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    border: 3px solid #2746f5;
-}
-
-#menu_pag li {
-    margin: 0px 10px ;
-    display: inline;
-    text-align: center;
-}
-
-#menu_pag a {
-    padding: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 20px 20px 20px 20px;
-    -webkit-border-radius: 20px 20px 20px 20px;
-    -moz-border-radius: 20px 20px 20px 20px;
-    background: #f5d627;
-    border: 3px solid #2746f5;
-    color: #272EF5;
-
-}
-
-#menu_pag a[aria-current="page"] {
-    border-radius: 42px 42px 42px 42px;
-    -webkit-border-radius: 42px 42px 42px 42px;
-    -moz-border-radius: 42px 42px 42px 42px;
-    background: #f5d627;
-    border: 5px dashed #2746f5;
-}
-
-#menu_pag a:hover {
-    background: #2746F5;
-    color: #F5D627;
-    border: 2px solid #2746F5;
-}
-
-#info {
-    width: 100%;
-    height: 900px;
-    background: #f5d627;;
-    text-align: center;
-    color: #2746F5;
-}
-
-
-#info li {
-    font-weight: bold;
-    list-style: none;
-    margin: 20px;
-}
-
-#info a {
-    font-weight: 300;
-    text-decoration: none;
-}
-
-#info h4, #info h2 {
-    font-family: "Krona One";
-    text-decoration: underline;
-    margin: 30px;
-    font-size: 18px;
-}
-
-article {
-    text-align: center;
+    margin:0;
+    padding:0;
+    font-size: var(--tamanio-normal);
+    font-family: var(--fuente);
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-p{
-    font-size: 20px;
-    margin: 10px;
-    text-align: justify;
-}
-
-.expe {
-    margin-left: 10px;
-    font-size: 20px;
-    color: #272EF5;
-}
-
-img {
-    background: #272EF5;
-    height: 284px;
-    width: 208px;
-    border-radius: 99px 99px 99px 99px;
-    -webkit-border-radius: 99px 99px 99px 99px;
-    -moz-border-radius: 99px 99px 99px 99px;
-    border: 3px solid #2746f5;
-    overflow: hidden;
-}
-
-.expe form {
+#encabezado {
+    background-color: var(--color-principal);
     display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    gap: 8px;
-    margin: 20px 0;
-}
-
-.expe form label {
-    font-weight: bold;
-    color: #2746F5;
-    margin-top: 10px;
-}
-
-.expe form input[type="text"],
-.expe form input[type="date"],
-.expe form select,
-.expe form textarea {
-    padding: 8px 12px;
-    border: 2px solid #2746F5;
-    border-radius: 8px;
-    font-family: "Fira Sans";
-    font-size: 16px;
-    background: #fffde7;
-    color: #222;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.expe form textarea {
-    height: 100px;
-}
-
-.expe form input[type="submit"] {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #2746F5;
-    color: #F5D627;
-    border: none;
-    border-radius: 20px;
-    font-family: "Krona One";
-    font-size: 16px;
-    cursor: pointer;
-    align-self: flex-start;
-}
-
-.expe form input[type="submit"]:hover {
-    background: #F5D627;
-    color: #2746F5;
-    border: 2px solid #2746F5;
-}
-
-.tabla-datos {
-    width: min(760px, 95%);
-    margin: 20px auto;
-    border-collapse: collapse;
-    background: #fffde7;
-    border: 3px solid #2746F5;
-}
-
-.tabla-datos td {
-    border: 2px solid #2746F5;
-    padding: 12px 14px;
-    text-align: left;
-    color: #272EF5;
-    font-size: 18px;
-}
-
-.tabla-datos td:first-child {
-    width: 36%;
-    font-weight: 700;
-    background: #f8eb89;
-}
-
-.tabla-datos a {
-    color: #2746F5;
-    font-weight: 700;
-}
-
-.domicilio-con-link {
-    display: flex;
+    padding: var(--space);
     justify-content: space-between;
     align-items: center;
-    gap: 12px;
+}
+
+#menu_encabezado ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+#menu_encabezado li{
+    padding-left: calc(2 * var(--space));
+}
+
+#menu_encabezado li a{
+    color: var(--color-fuente);
+    text-decoration: none;
 }

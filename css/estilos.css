@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 :root{
 --color-primario:#7ACC2D;
---color-secundario:#ffffff;
---color-fondo:#f5f5f5;
+--color-fondo:#ffffff;
+--color-secundario:#f5f5f5;
 --color-texto:#313337;
 --fuente-principal:'Open Sans', sans-serif;
 --espacio-xs: 8px;
@@ -24,7 +24,7 @@ html, body {
 
 body {
     font-family: var(--fuente-principal);
-    font-size: 16px;
+    font-size: var(--espacio-sm);
     color: var(--color-texto);
     background-color: var(--color-fondo);
     line-height: 1.4;
@@ -41,11 +41,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--espacio-sm) var(--espacio-md);
-}
-
-#encabezado img {
-    width: calc(4 * var(--espacio-sm));
+    padding: calc(2 * var(--espacio-xs)) var(--espacio-md);
 }
 
 #menu_encabezado ul{
@@ -83,14 +79,13 @@ img {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: calc(4* var(--espacio-sm)) var(--espacio-md) calc(8* var(--espacio-sm));
+    padding: calc(8 * var(--espacio-md)) var(--espacio-md);
 }
 
 #intro h1 {
-    max-width: 1300px;
+    padding: 0 var(--espacio-md);
+    font-size: var(--espacio-lg);
     margin: 0;
-    font-size: clamp(1.6rem, 3vw, 2.4rem);
-    line-height: 1.25;
 }
 
 /* ------Productos----- */
@@ -102,7 +97,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: calc(2 * var(--espacio-sm));
-    padding: calc(8 * var(--espacio-sm)) var(--espacio-md) var(--espacio-lg);
+    padding: calc(8 * var(--espacio-sm)) var(--espacio-md) calc(3 * var(--espacio-lg));
     background-image: url("../images/curve.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,8 +105,8 @@ img {
 }
 
 #productos article {
-    /* flex: 0 0 calc(13 * var(--espacio-sm)); */
-    background-color: var(--color-secundario);
+    flex: 0 0 calc(40 * var(--espacio-sm));
+    background-color: var(--color-fondo);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -123,7 +118,7 @@ img {
 
 #productos article h2 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: var(--espacio-md);
 }
 
 #productos article p {
@@ -151,21 +146,22 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    padding: 100px 20px;
+    gap: calc(2 * var(--espacio-sm));
 }
 
 #caracteristicas article {
-    width: 30%;
-    background-color: var(--color-secundario);
+    width: 25%;
+    background-color: var(--color-fondo);
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding: calc(var(--space) * 2);
+    gap: calc(var(--espacio-md) / 2);
 }
 
-#caracteristicas article p {
-    max-width: 95%;
+#caracteristicas article h2, #caracteristicas article p {
+    margin: 0;
 }
 
 .img_cars {
@@ -176,35 +172,64 @@ img {
 
 hr {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
-/*  */
-------Menciones-----
+
+/* ------Menciones----- */
+
 
 #comentarios {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: calc(2 * var(--espacio-sm)); 
+    padding: 48px 0 24px;
 }
 
 #comentarios article {
-    width: 20%;
+    width: 22%;
+    background-color: var(--color-fondo);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 calc(var(--space));
+    align-items: flex-start;
+    gap: calc(var(--espacio-md) / 2);
+    border-radius: 2px 2px 0px 0px;
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.5);
+    margin-top: calc(2 * var(--espacio-lg));
 }
-/*  */
-------Pie de página-----
+
+#comentarios article img{
+    width: 100%;
+    border-bottom: 2px solid var(--color-fondo);
+    border-radius: 2px 2px 0px 0px;
+    
+}
+
+#comentarios article h3 {
+    font-size: var(--espacio-md);
+    margin: var(--espacio-sm);
+}
+
+#comentarios article p{
+    margin: var(--espacio-sm);
+}
+
+.tit_com {
+    text-align: center;
+    font-size: calc(3 * var(--espacio-sm));
+    margin: 0;
+    padding: var(--espacio-md) 0;
+}
+
+
+/* ------Pie de página----- */
 #pie_pagina {
-    background-color: var(--color-fondo);
+    background-color: var(--color-texto);
     color: var(--color-secundario);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 var(--space);
+    padding: 0 var(--espacio-md);
 }
-/*  */
-/*  */
-/*  */

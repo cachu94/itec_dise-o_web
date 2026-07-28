@@ -27,6 +27,7 @@
 .container {
     width: 100%;
     /* max-width: 1200px; */
+    margin: 0 auto;
     font-family: var(--fuente-principal)
 }
 
@@ -56,10 +57,6 @@
 #menu_encabezado li a:hover{
     color: #f5f5f5;
     transform: translateY(-2px);
-}
-
-#main{
-    width: 100%;
 }
 
 #intro {
@@ -122,11 +119,6 @@
     background-color: #75c42bee;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
     transform: translateY(1px) scale(0.98);
-}
-
-.container{
-    width: 100%;
-    margin: 0 auto;
 }
 
 .row{

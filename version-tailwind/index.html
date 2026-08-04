@@ -1,43 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Habana Mix es una acedemia de baile dirigida por Claudio Tuninetti">
-    <title>Habana Mix</title>
+    <meta name="description" content="Habana Mix es una acedemia de baile dirigida por Claudio Tuninetti">
+    <title>Habana Mix | Compañía y Academia de Baile - Río Cuarto</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts: Comfortaa y Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Configuración de Colores y Fonts -->
+    <style type="text/tailwindcss">
+        @theme {
+            --font-logo: 'Comfortaa', cursive;
+            --font-sans: 'Montserrat', sans-serif;
+            --color-hm-black: #0d0d0d;
+            --color-hm-card: #161619;
+            --color-hm-red: #ff3b00;
+            --color-hm-pink: #ff0055;
+            --color-hm-yellow: #ffd166;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>HABANA MIX</h1>
-        <h2>Academia de Baile</h2>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Clases</li>
-                <li>Paquetes</li>
-            </ul>
-        </nav>
+<body class="bg-hm-black text-gray-100 font-sans antialiased selection:bg-hm-red selection:text-white flex flex-col min-h-screen">
+    <header class="bg-hm-black/90 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo Habana Mix -->
+            <a href="index.html" class="font-logo text-2xl font-bold tracking-tight">
+                <span class="text-hm-red">habana</span> <span class="text-hm-pink">m</span><span class="text-hm-yellow">ix</span>
+            </a>
+            <h1>HABANA MIX</h1>
+            <h2>Academia de Baile</h2>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#profes">Profesores</a></li>
+                    <li><a href="#promos">Promos</a></li>
+                    <li><a href="#tienda">Tienda</a></li>
+                    <li><a href="#mojitos">Mojitos</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="hero">
             <figure>
-                <img>
+                <img src="./img/HM - hero.jpg" alt="Imagen de la academia de baile Habana Mix">
+                <figcaption>Academia de baile Habana Mix</figcaption>
             </figure>
         </section>
-        <section id="paquetes">
+        <section id="promos">
             <article>
-                <h3>Paquete 1</h3>
+                <h3>Clase Individual</h3>
+                <h4>Pase por 1 disciplina</h4>
             </article>
             <article>
-                <h3>Paquete 2</h3>
+                <h3>Pack Dúo</h3>
+                <h4>Promo 2 disciplinas a elección</h4>
             </article>
             <article>
-                <h3>Paquete 3</h3>
+                <h3>Pase Libre</h3>
+                <h4>Acceso a todas las clases</h4>
             </article>
         </section>
-        
-
+        <section id="profes">
+            <article>
+                <h3>Claudio Tuninetti</h3>
+                <h4>Director y Profesor</h4>
+                <h4>Salsa - Bachata</h4>
+            </article>
+            <article>
+                <h3>Claudia Candellero</h3>
+                <h4>Profesora</h4>
+                <h4>Salsa - Bachata - Jazz</h4>
+            </article>
+            <article>
+                <h3>Luicila Stefanini</h3>
+                <h4>Profesora</h4>
+                <h4>Salsa - Bachata - Street Dance</h4>
+            </article>
+        </section>
+        <section id="tienda">
+            <h3>Tutto Danza</h3>
+            <article>
+                <h3>Remeras</h3>
+                <h4>Remeras de la academia</h4>
+            </article>
+            <article>
+                <h3>Zapatos Hombres</h3>
+                <h4>Zapatos de baile</h4>
+            </article>
+            <article>
+                <h3>Sandalias</h3>
+                <h4>Sandalias de baile</h4>
+            </article>
+        </section>
+        <section id="mojitos">
+            <h3>Mojitos Resto Bar</h3>
+            <article>
+                <h3>Apertura</h3>
+                <h4>Jueves 22:00</h4>
+            </article>
+            <article>
+                <h3>Clásico</h3>
+                <h4>Ron, hierbabuena, azúcar, soda y lima</h4>
+            </article>
+            <article>
+                <h3>Frutilla</h3>
+                <h4>Ron, hierbabuena, azúcar, soda y frutilla</h4>
+            </article>
+            <article>
+                <h3>Maracuyá</h3>
+                <h4>Ron, hierbabuena, azúcar, soda y maracuyá</h4>
+            </article>
+        </section>
     </main>
+    <footer>
+        <h3>Datos de Contacto</h3>
+        <p>Telefono: xxxxxxxxxx</p>
+        <p>Redes Sociales: xxxxxxxxxx</p>
+        <p>Dirección: xxxxxxxxxx</p>
+        <p> @copyright Habana Mix</p>
+    </footer>
 </body>
 </html>

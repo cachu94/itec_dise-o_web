@@ -21,8 +21,8 @@
             --color-hm-black: #0d0d0d;
             --color-hm-card: #161619;
             --color-hm-red: #ff3b00;
-            --color-hm-pink: #ff0055;
-            --color-hm-yellow: #ffd166;
+            --color-hm-pink: #ff9500;
+            --color-hm-yellow: #f2ff00;
         }
     </style>
 </head>
@@ -33,26 +33,47 @@
             <a href="index.html" class="font-logo text-2xl font-bold tracking-tight">
                 <span class="text-hm-red">habana</span> <span class="text-hm-pink">m</span><span class="text-hm-yellow">ix</span>
             </a>
-            <h1>HABANA MIX</h1>
-            <h2>Academia de Baile</h2>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#profes">Profesores</a></li>
-                    <li><a href="#promos">Promos</a></li>
-                    <li><a href="#tienda">Tienda</a></li>
-                    <li><a href="#mojitos">Mojitos</a></li>
-                    <li><a href="#horarios">Horarios</a></li>
-                </ul>
+            <!-- MENU DE NAVEGACIÓN -->
+            <nav class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                <a href="#promos" class="hover:text-hm-red transition">Pases y Promos</a>
+                <a href="#profes" class="hover:text-hm-red transition">Staff</a>
+                <a href="#tienda" class="hover:text-hm-red transition">Tutto Danza</a>
+                <a href="#mojitos" class="hover:text-hm-red transition">Mojitos Bar</a>
             </nav>
+
+            <!-- Botón de Acción -->
+            <a href="#promos" class="hidden sm:inline-block bg-gradient-to-t from-hm-red to-hm-pink text-white text-xs uppercase font-bold py-2.5 px-5 rounded-full hover:shadow-lg hover:shadow-hm-red/30 duration-300">
+                Inscribirme
+            </a>
         </div>
     </header>
-    <main>
-        <section id="hero">
-            <figure>
-                <img src="./img/HM - hero.jpg" alt="Imagen de la academia de baile Habana Mix">
-                <figcaption>Academia de baile Habana Mix</figcaption>
+    <main class="flex-grow">
+        <!-- SECCION HERO -->
+        <section id="hero" class="relative bg-hm-black py-20 md:py-32 px-4 overflow-hidden border-b border-gray-800 flex items-center justify-center">
+            <figure class="absolute inset-0 w-full h-full">
+                <img src="./img/HM - hero.jpg" alt="Academia de baile Habana Mix" class="w-full h-full object-cover object-[center_25%] opacity-95">
             </figure>
+
+            <!-- Contenido principal -->
+            <div class="relative z-10 max-w-5xl mx-auto text-center space-y-6">
+                <span class="inline-block bg-hm-card border border-hm-red/40 text-hm-yellow text-xs uppercase tracking-widest px-4 py-1.5 rounded-full font-semibold">Compañía de Baile - Río Cuarto</span>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight">
+                    Sentí la pasión del <span>Movimiento</span>
+                </h1>
+
+                <p>
+                    Ritmos Latinos, Urbano, Jazz, Clasico, Arabe, Pole Dance, Acro Telas y mucho más. Sumate a la comunidad de baile con más trayectoria de Río Cuarto y viví la experiencia de la familia Habana Mix.
+                </p>
+
+                <div>
+                    <a>
+                        Ver Promociones
+                    </a>
+                    <a>
+                        Pack 2 Clases (Promo)
+                    </a>
+                </div>
+            </div>
         </section>
         <section id="promos">
             <article>

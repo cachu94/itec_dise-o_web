@@ -50,40 +50,63 @@
             </figure>
 
             <!-- Contenido principal -->
-            <div class="relative z-10 max-w-5xl mx-auto text-center space-y-6">
+            <article class="relative z-10 max-w-5xl mx-auto text-center space-y-6">
                 <span class="inline-block bg-black border border-red-500/40 text-yellow-300 text-xs uppercase tracking-widest px-4 py-1.5 rounded-full font-semibold">Compañía de Baile - Río Cuarto</span>
                 <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-yellow-400 tracking-tight leading-tight ">
-                    <span class="drop-shadow-xl text-shadow-md/90">Sentí la pasión del</span> 
+                    <span class="drop-shadow-xl text-shadow-md/30">Sentí la pasión del</span> 
                     <span class="bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 bg-clip-text text-transparent text-shadow-none [filter:drop-shadow(0_1px_2px_rgba(0,0,0,.55))_drop-shadow(0_4px_6px_rgba(0,0,0,.5))_drop-shadow(0_10px_18px_rgba(0,0,0,.4))]">Movimiento</span>
                 </h1>
 
-                <p class="sm:text-lg max-w-2xl mx-auto font-medium leading-relaxed text-yellow-100/95 bg-black/40 backdrop-blur-[2px] border border-white/10 rounded-md px-5 py-4 text-shadow-[0_1px_2px_rgba(0,0,0,0.55)]">
+                <p class="sm:text-lg max-w-2xl mx-auto font-medium leading-relaxed text-yellow-100/95 bg-black/40 backdrop-blur-[2px] border border-white/10 rounded-md px-5 py-4 text-shadow-md">
                     Ritmos Latinos, Urbano, Jazz, Clasico, Arabe, Pole Dance, Acro Telas y mucho más. Sumate a la comunidad de baile con más trayectoria de Río Cuarto y viví la experiencia de la familia Habana Mix.
                 </p>
 
                 <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
-                    <a href="#promos" class="w-full ">
+                    <a href="#promos" class="w-full sm:w-auto bg-gradient-to-t from-red-500 to-orange-400 hover:from-orange-400 hover:to-red-500 text-white font-bold py-3.5 px-8 rounded-full shadow-lg hover:scale-105 transition duration-300">
                         Ver Promociones
                     </a>
-                    <a>
+                    <a href="detalles_producto.html" class="w-full sm:w-auto bg-black/90 backdrop-blur-sm border border-gray-700 hover:border-yellow-300 text-white font-semibold py-3.5 px-8 rounded-full transition duration-300">
                         Pack 2 Clases (Promo)
                     </a>
                 </div>
-            </div>
+            </article>
         </section>
-        <section id="promos">
-            <article>
-                <h3>Clase Individual</h3>
-                <h4>Pase por 1 disciplina</h4>
-            </article>
-            <article>
-                <h3>Pack Dúo</h3>
-                <h4>Promo 2 disciplinas a elección</h4>
-            </article>
-            <article>
-                <h3>Pase Libre</h3>
-                <h4>Acceso a todas las clases</h4>
-            </article>
+        <section id="promos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Elegí tu Plan de Clases</h2>
+                <p class="mt-2 text-gray-400">Aprovechá nuestras promociones y elegí el plan que más se adapte a vos.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="bg-black/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-red-500 transition-all duration-300">
+                    <div class="p-8">
+                        <span>Individual</span>
+                        <h3>Pase 1 Disciplina</h3>
+                        <p>Ideal si queres enfocarte al 100% en un solo ritmo</p>
+
+                        <div>
+                            <span>Precio:</span>
+                            <span>$XXX por mes</span>
+                        </div>
+
+                        <ul>
+                            <li>Dos clases por semana</li>
+                            <li>Acceso a una diciplina a elección</li>
+                            <li>Asistencia controlada con carnet</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a>Inscribirme</a>
+                    </div>
+                </article>
+                <article>
+                    <h3>Pack Dúo</h3>
+                    <h4>Promo 2 disciplinas a elección</h4>
+                </article>
+                <article>
+                    <h3>Pase Libre</h3>
+                    <h4>Acceso a todas las clases</h4>
+                </article>
+            </div>
         </section>
         <section id="profes">
             <article>

@@ -51,7 +51,7 @@
 
             <!-- Contenido principal -->
             <article class="relative z-10 max-w-5xl mx-auto text-center space-y-6">
-                <span class="inline-block bg-black border border-red-500/40 text-yellow-300 text-xs uppercase tracking-widest px-4 py-1.5 rounded-full font-semibold">Compañía de Baile - Río Cuarto</span>
+                <span class="inline-block bg-black border-4 border-red-500 text-yellow-300 text-xs uppercase tracking-widest px-4 py-1.5 rounded-full font-semibold shadow-lg">Compañía de Baile - Río Cuarto</span>
                 <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-yellow-400 tracking-tight leading-tight ">
                     <span class="drop-shadow-xl text-shadow-md/30">Sentí la pasión del</span> 
                     <span class="bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 bg-clip-text text-transparent text-shadow-none [filter:drop-shadow(0_1px_2px_rgba(0,0,0,.55))_drop-shadow(0_4px_6px_rgba(0,0,0,.5))_drop-shadow(0_10px_18px_rgba(0,0,0,.4))]">Movimiento</span>
@@ -77,34 +77,75 @@
                 <p class="mt-2 text-gray-400">Aprovechá nuestras promociones y elegí el plan que más se adapte a vos.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <article class="bg-black/50 rounded-2xl overflow-hidden border border-gray-800 transition-all duration-300 flex flex-col justify-between shadow-lg hover:border-red-500">
+                <!-- CARD 1: Clase Individual -->
+                <article class="bg-gray-900/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-red-500 transition-all duration-300 flex flex-col justify-between shadow-lg hover:shadow-2xl hover:-translate-y-1">
                     <div class="p-8">
                         <span class="text-xs font-bold uppercase tracking-wider text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full">Individual</span>
                         <h3 class="text-2xl font-bold mt-4">Pase 1 Disciplina</h3>
                         <p class="text-gray-400 text-sm mt-2">Ideal si queres enfocarte al 100% en un solo ritmo</p>
 
-                        <div class="mt-6 flex items-end gap-2">
+                        <div class="mt-6 flex items-end justify-center gap-2">
                             <span class="text-4xl font-extrabold">$15.000</span>
                             <span class="text-gray-400 text-sm">por mes</span>
                         </div>
 
-                        <ul class="mt-6 space-y-3 text-sm">
-                            <li>2 clases por semana</li>
-                            <li>1 Estilo</li>
-                            <li>Asistencia controlada con carnet</li>
+                        <ul class="text-sm text-gray-300 space-y-3 border-t border-gray-800 pt-6">
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> 2 clases por semana</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> 1 Estilo</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Asistencia controlada con carnet</li>
                         </ul>
                     </div>
-                    <div>
-                        <a>Inscribirme</a>
+                    <div class="p-8 pt-0">
+                        <a href="detalles_producto.html?plan=individual" class="block text-center bg-gray-800 hover:bg-red-500 font-semibold py-3 rounded-xl transition duration-300">Inscribirme</a>
                     </div>
                 </article>
-                <article>
-                    <h3>Pack Dúo</h3>
-                    <h4>Promo 2 disciplinas a elección</h4>
+                <!-- CARD 2: Pack Dúo -->
+                <article class="bg-gradient-to-b from-gray-800 to-black/90 rounded-2xl overflow-hidden border-2 border-gray-800 transition-all duration-300 flex flex-col justify-between shadow-2xl relative hover:-translate-y-1 hover:border-orange-400">
+                    <div class="absolute top-0 right-0 bg-red-500 text-sm font-bold uppercase px-4 py-1 rounded-bl-lg tracking-widest">
+                        MAS POPULAR
+                    </div>
+                    <div class="p-8">
+                        <span class="text-xs font-bold uppercase tracking-wider text-orange-400 bg-orange-400/10 px-3 py-1 rounded-full">Promo Pack</span>
+                        <h3 class="text-2xl font-bold mt-4">Pack Dúo (2 Ritmos)</h3>
+                        <p class="text-gray-400 text-sm mt-2">Combina tus ritmos favoritos: Latino, Urbano, Técnica o Entrenamiento.</p>
+                        
+                        <div class="mt-6 flex items-end justify-center gap-2">
+                            <span class="text-4xl font-extrabold">$24.000</span>
+                            <span class="text-gray-400 text-sm">por mes</span>
+                        </div>
+
+                        <ul class="text-sm text-gray-300 space-y-3 border-t border-gray-800 pt-6">
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> 4 Clases por semana</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Combina 2 ritmos a tu elección</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Descuento especial por paquete</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-8 pt-0">
+                        <a href="detalles_producto.html" class="block text-center bg-gradient-to-r from-red-500 to-orange-400 hover:opacity-90 text-white font-bold py-3 rounded-xl transition duration-300 shadow-xl">Seleccionar Clases</a>
+                    </div>
                 </article>
-                <article>
-                    <h3>Pase Libre</h3>
-                    <h4>Acceso a todas las clases</h4>
+                <!-- CARD 3: Pase Libre -->
+                <article class="bg-gray-900/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-yellow-400 transition-all duration-300 flex flex-col justify-between shadow-lg hover:shadow-2xl hover:-translate-y-1">
+                    <div class="p-8">
+                        <span class="text-xs font-bold uppercase tracking-wider text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full">Vip / Full</span>
+                        <h3 class="text-2xl font-bold mt-4">Pase Libre</h3>
+                        <p class="text-gray-400 text-sm mt-2">Acceso ilimitado a todas las clases</p>
+
+                        <div class="mt-6 flex items-end justify-center gap-2">
+                            <span class="text-4xl font-extrabold">$35.000</span>
+                            <span class="text-gray-400 text-sm">por mes</span>
+                        </div>
+
+                        <ul class="text-sm text-gray-300 space-y-3 border-t border-gray-800 pt-6">
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Acceso a todas las clases</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Descuentos en congresos, eventos y talleres</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Descuento en productos de la tienda</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <a href="detalles_producto.html?plan=pase_libre" class="block text-center bg-gray-800 hover:bg-yellow-400 font-semibold py-3 rounded-xl transition duration-300">Inscribirme</a>
+                    </div>
                 </article>
             </div>
         </section>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Habana Mix es una acedemia de baile dirigida por Claudio Tuninetti">
+    <title>Habana Mix | Compañía y Academia de Baile - Río Cuarto</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts: Comfortaa y Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Configuración de Colores y Fonts -->
+    <style type="text/tailwindcss">
+        @theme {
+            --font-logo: 'Comfortaa', cursive;
+            --font-sans: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-100 font-sans antialiased selection:bg-red-500 selection:text-white flex flex-col min-h-screen">
+    <header class="bg-black/90 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo Habana Mix -->
+            <a href="index.html" class="font-logo text-2xl font-bold tracking-tight">
+                <span class="text-red-500">habana</span> <span class="text-orange-400">m</span><span class="text-yellow-300">ix</span>
+            </a>
+            <!-- MENU DE NAVEGACIÓN -->
+            <nav class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                <a href="#promos" class="hover:text-yellow-300 transition">Pases y Promos</a>
+                <a href="#profes" class="hover:text-yellow-300 transition">Staff</a>
+                <a href="#servicios" class="hover:text-yellow-300 transition">Servicios</a>
+            </nav>
+
+            <!-- Botón de Acción -->
+            <a href="#promos" class="hidden sm:inline-block bg-gradient-to-t from-red-500 to-orange-400 text-white text-xs uppercase font-bold py-2.5 px-5 rounded-full hover:shadow-lg hover:shadow-red-400/50 duration-300">
+                Inscribirme
+            </a>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <!-- SECCION HERO -->
+        <section id="hero" class="relative bg-hm-black py-20 md:py-32 px-4 overflow-hidden border-b border-gray-800 flex items-center justify-center">
+            <figure class="absolute inset-0 bg-black/50 z-0">
+                <img src="./img/HM - hero.jpg" alt="Academia de baile Habana Mix" class="w-full h-full object-cover object-[center_25%] opacity-95">
+            </figure>
+
+            <!-- Contenido principal -->
+            <article class="relative z-10 max-w-5xl mx-auto text-center space-y-6">
+                <span class="inline-block bg-black border-4 border-red-500 text-yellow-300 text-xs uppercase tracking-widest px-4 py-1.5 rounded-full font-semibold shadow-lg">Compañía de Baile - Río Cuarto</span>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-yellow-400 tracking-tight leading-tight ">
+                    <span class="drop-shadow-xl text-shadow-md/30">Sentí la pasión del</span> 
+                    <span class="bg-gradient-to-r from-red-500 via-orange-400 to-yellow-300 bg-clip-text text-transparent text-shadow-none [filter:drop-shadow(0_1px_2px_rgba(0,0,0,.55))_drop-shadow(0_4px_6px_rgba(0,0,0,.5))_drop-shadow(0_10px_18px_rgba(0,0,0,.4))]">Movimiento</span>
+                </h1>
+
+                <p class="sm:text-lg max-w-2xl mx-auto font-medium leading-relaxed text-yellow-100/95 bg-black/40 backdrop-blur-[2px] border border-white/10 rounded-md px-5 py-4 text-shadow-md">
+                    Ritmos Latinos, Urbano, Jazz, Clasico, Arabe, Pole Dance, Acro Telas y mucho más. Sumate a la comunidad de baile con más trayectoria de Río Cuarto y viví la experiencia de la familia Habana Mix.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#promos" class="w-full sm:w-auto bg-gradient-to-t from-red-500 to-orange-400 hover:from-orange-400 hover:to-red-500 text-white font-bold py-3.5 px-8 rounded-full shadow-lg hover:scale-105 transition duration-300">
+                        Ver Promociones
+                    </a>
+                    <a href="detalles_producto.html" class="w-full sm:w-auto bg-black/90 backdrop-blur-sm border border-gray-700 hover:border-yellow-300 text-white font-semibold py-3.5 px-8 rounded-full transition duration-300">
+                        Pack 2 Clases (Promo)
+                    </a>
+                </div>
+            </article>
+        </section>
+        <section id="promos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <header class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Elegí tu Plan de Clases</h2>
+                <p class="mt-2 text-gray-400">Aprovechá nuestras promociones y elegí el plan que más se adapte a vos.</p>
+            </header>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- CARD 1: Clase Individual -->
+                <article class="bg-gray-900/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-red-500 transition-all duration-300 flex flex-col justify-between shadow-lg hover:shadow-2xl hover:-translate-y-1">
+                    <div class="p-8">
+                        <span class="text-xs font-bold uppercase tracking-wider text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full">Individual</span>
+                        <h3 class="text-2xl font-bold mt-4">Pase 1 Disciplina</h3>
+                        <p class="text-gray-400 text-sm mt-2">Ideal si queres enfocarte al 100% en un solo ritmo</p>
+
+                        <p class="mt-6 flex items-end justify-center gap-2">
+                            <span class="text-4xl font-extrabold">$15.000</span>
+                            <span class="text-gray-400 text-sm">por mes</span>
+                        </p >
+
+                        <ul class="text-sm text-gray-300 space-y-3 border-t border-gray-800 pt-6">
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> 2 clases por semana</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> 1 Estilo</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Asistencia controlada con carnet</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <a href="detalles_producto.html?plan=individual" class="block text-center bg-gray-800 hover:bg-red-500 font-semibold py-3 rounded-xl transition duration-300">Inscribirme</a>
+                    </div>
+                </article>
+                <!-- CARD 2: Pack Dúo -->
+                <article class="bg-gradient-to-b from-gray-800 to-black/90 rounded-2xl overflow-hidden border-2 border-gray-800 transition-all duration-300 flex flex-col justify-between shadow-2xl relative hover:-translate-y-1 hover:border-orange-400">
+                    <div class="absolute top-0 right-0 bg-red-500 text-sm font-bold uppercase px-4 py-1 rounded-bl-lg tracking-widest">
+                        MAS POPULAR
+                    </div>
+                    <div class="p-8">
+                        <span class="text-xs font-bold uppercase tracking-wider text-orange-400 bg-orange-400/10 px-3 py-1 rounded-full">Promo Pack</span>
+                        <h3 class="text-2xl font-bold mt-4">Pack Dúo (2 Ritmos)</h3>
+                        <p class="text-gray-400 text-sm mt-2">Combina tus ritmos favoritos: Latino, Urbano, Técnica o Entrenamiento.</p>
+                        
+                        <div class="mt-6 flex items-end justify-center gap-2">
+                            <span class="text-4xl font-extrabold">$24.000</span>
+                            <span class="text-gray-400 text-sm">por mes</span>
+                        </div>
+
+                        <ul class="text-sm text-gray-300 space-y-3 border-t border-gray-800 pt-6">
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> 4 Clases por semana</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Combina 2 ritmos a tu elección</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Descuento especial por paquete</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-8 pt-0">
+                        <a href="detalles_producto.html" class="block text-center bg-gradient-to-r from-red-500 to-orange-400 hover:opacity-90 text-white font-bold py-3 rounded-xl transition duration-300 shadow-xl">Seleccionar Clases</a>
+                    </div>
+                </article>
+                <!-- CARD 3: Pase Libre -->
+                <article class="bg-gray-900/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-yellow-400 transition-all duration-300 flex flex-col justify-between shadow-lg hover:shadow-2xl hover:-translate-y-1">
+                    <div class="p-8">
+                        <span class="text-xs font-bold uppercase tracking-wider text-yellow-400 bg-yellow-400/10 px-3 py-1 rounded-full">Vip / Full</span>
+                        <h3 class="text-2xl font-bold mt-4">Pase Libre</h3>
+                        <p class="text-gray-400 text-sm mt-2">Acceso ilimitado a todas las clases</p>
+
+                        <div class="mt-6 flex items-end justify-center gap-2">
+                            <span class="text-4xl font-extrabold">$35.000</span>
+                            <span class="text-gray-400 text-sm">por mes</span>
+                        </div>
+
+                        <ul class="text-sm text-gray-300 space-y-3 border-t border-gray-800 pt-6">
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Acceso a todas las clases</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Descuentos en congresos, eventos y talleres</li>
+                            <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> Descuento en productos de la tienda</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <a href="detalles_producto.html?plan=pase_libre" class="block text-center bg-gray-800 hover:bg-yellow-400 font-semibold py-3 rounded-xl transition duration-300">Inscribirme</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="profes" class="bg-gray-900/40 py-20 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <header class="text-center mb-4">
+                    <h2 class="text-3xl font-extrabold">Staff de Instructores</h2>
+                    <p class="text-gray-400 mt-2">Profesores capacitados para guiar tu aprendizaje en cada estilo de baile</p>
+                </header>
+                <div class="flex justify-center mb-12">
+                    <article class="w-96 h-60 bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center hover:border-red-500/50 transition">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-tr from-red-500 to-yellow-300 p-1">
+                            <img src="./img/Claudio_Tuninetti.png" alt="Claudio Tuninetti" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <h3 class="font-bold text-white text-xl uppercase">Claudio Tuninetti</h3>
+                        <p class="text-xs text-red-500 uppercase font-semibold mt-1">Director y Profesor</p>
+                        <p class="text-sm text-gray-400 mt-1 uppercase">Salsa - Bachata</p>
+                    </article>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Profe 1 -->
+                    <article class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center hover:border-red-500/50 transition">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-tr from-red-500 to-yellow-300 p-1">
+                            <img src="./img/Claudia_Candellero.png" alt="Claudia Candellero" class="w-full h-full object-cover object-[center_10%] rounded-full">
+                        </div>
+                        <h3 class="font-bold text-white text-xl uppercase">Claudia Candellero</h3>
+                        <p class="text-sm text-gray-400 mt-1 uppercase">Salsa - Bachata - Jazz - Infantes</p>
+                    </article>
+
+                    <!-- Profe 2 -->
+                    <article class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center hover:border-red-500/50 transition">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-tr from-red-500 to-yellow-300 p-1">
+                            <img src="./img/Federico_Tuninetti.png" alt="Federico Tuninetti" class="w-full h-full object-cover object-[left_10%] rounded-full">
+                        </div>
+                        <h3 class="font-bold text-white text-xl uppercase">Federico Tuninetti</h3>
+                        <p class="text-sm text-gray-400 mt-1 uppercase">Salsa - Bachata - Reggaetón</p>
+                    </article>
+
+                    <!-- Profe 3 -->
+                    <article class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center hover:border-red-500/50 transition">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-tr from-red-500 to-yellow-300 p-1">
+                            <img src="./img/Pupa.png" alt="Luisana Stefanini" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <h3 class="font-bold text-white text-xl uppercase">Luisana Stefanini</h3>
+                        <p class="text-sm text-gray-400 mt-1 uppercase">Street Dance</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="servicios" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-gray-800">
+            <header class="text-center mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-orange-400">
+                    Ecosistema Habana Mix
+                </span>
+                <h2>Comercio & Noches Sociales</h2>
+                <p>Todo lo que necesitas para tu indumentaria y noches sociales</p>
+            </header>
+
+            <!-- Grillas Publicitarias -->
+            <div>
+                <article>
+                    <div>
+                        <div>
+                            <span>Lamadrid 720</span>
+                            <span>🛍️</span>
+                        </div>
+
+                        <h3>Tutto Danza - Tienda Oficial</h3>
+                        <p>Tienda especializada en indumentaria y calzado de baile. Encontrá remeras oficiales, buzos, zapatos de baile, sandalias con piedras y confección de trajes de baile a medida para tus presentaciones.</p>
+
+                        <ul>
+                            <li><span>✓</span>Calzados importados y nacionales de baile</li>
+                            <li><span>✓</span>Indumentaria exclusiva Habana Mix</li>
+                            <li><span>✓</span>Descuentos especiales para alumnos</li>
+                        </ul>
+                    </div>
+
+                    <a>Ver Catálogo de Tienda</a>
+                </article>
+            </div>
+            <article>
+                <div>
+                    <div>
+                        <span>Jueves desde 22:00 hs</span>
+                        <span>🍹</span>
+                    </div>
+                    <h3>Mojitos Resto Bar</h3>
+                    <p>El punto de encuentro oficial para compartir, practicar lo aprendido y disfrutar del baile social. Coctelería clásica y un ambiente lleno de ritmo.</p>
+
+                    <ul>
+                        <li><span>✓</span>Pista abierta para baile social</li>
+                        <li><span>✓</span>Shows en vivo y DJ, Comida y Bebidas</li>
+                        <li><span>✓</span>Alquiler de salón para eventos privados</li>
+                    </ul>
+                </div>
+
+                <a>Conocer más</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h3>Datos de Contacto</h3>
+        <p>Telefono: xxxxxxxxxx</p>
+        <p>Redes Sociales: xxxxxxxxxx</p>
+        <p>Dirección: xxxxxxxxxx</p>
+        <p> @copyright Habana Mix</p>
+    </footer>
+</body>
+</html>

@@ -32,8 +32,7 @@
             <nav class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
                 <a href="#promos" class="hover:text-yellow-300 transition">Pases y Promos</a>
                 <a href="#profes" class="hover:text-yellow-300 transition">Staff</a>
-                <a href="#tienda" class="hover:text-yellow-300 transition">Tutto Danza</a>
-                <a href="#mojitos" class="hover:text-yellow-300 transition">Mojitos Bar</a>
+                <a href="#servicios" class="hover:text-yellow-300 transition">Servicios</a>
             </nav>
 
             <!-- Botón de Acción -->
@@ -72,10 +71,10 @@
             </article>
         </section>
         <section id="promos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="text-center mb-16">
+            <header class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Elegí tu Plan de Clases</h2>
                 <p class="mt-2 text-gray-400">Aprovechá nuestras promociones y elegí el plan que más se adapte a vos.</p>
-            </div>
+            </header>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- CARD 1: Clase Individual -->
                 <article class="bg-gray-900/50 rounded-2xl overflow-hidden border border-gray-800 hover:border-red-500 transition-all duration-300 flex flex-col justify-between shadow-lg hover:shadow-2xl hover:-translate-y-1">
@@ -84,10 +83,10 @@
                         <h3 class="text-2xl font-bold mt-4">Pase 1 Disciplina</h3>
                         <p class="text-gray-400 text-sm mt-2">Ideal si queres enfocarte al 100% en un solo ritmo</p>
 
-                        <div class="mt-6 flex items-end justify-center gap-2">
+                        <p class="mt-6 flex items-end justify-center gap-2">
                             <span class="text-4xl font-extrabold">$15.000</span>
                             <span class="text-gray-400 text-sm">por mes</span>
-                        </div>
+                        </p >
 
                         <ul class="text-sm text-gray-300 space-y-3 border-t border-gray-800 pt-6">
                             <li class="flex items-center"><span class="text-red-500 mr-2">✓</span> 2 clases por semana</li>
@@ -149,25 +148,79 @@
                 </article>
             </div>
         </section>
-        <section id="profes">
-            <article>
-                <h3>Claudio Tuninetti</h3>
-                <h4>Director y Profesor</h4>
-                <h4>Salsa - Bachata</h4>
-            </article>
-            <article>
-                <h3>Claudia Candellero</h3>
-                <h4>Profesora</h4>
-                <h4>Salsa - Bachata - Jazz</h4>
-            </article>
-            <article>
-                <h3>Luicila Stefanini</h3>
-                <h4>Profesora</h4>
-                <h4>Salsa - Bachata - Street Dance</h4>
-            </article>
+        <section id="profes" class="bg-gray-900/40 py-20 border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <header class="text-center mb-4">
+                    <h2 class="text-3xl font-extrabold">Staff de Instructores</h2>
+                    <p class="text-gray-400 mt-2">Profesores capacitados para guiar tu aprendizaje en cada estilo de baile</p>
+                </header>
+                <div class="flex justify-center mb-12">
+                    <article class="w-96 h-60 bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center hover:border-red-500/50 transition">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-tr from-red-500 to-yellow-300 p-1">
+                            <img src="./img/Claudio_Tuninetti.png" alt="Claudio Tuninetti" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <h3 class="font-bold text-white text-xl uppercase">Claudio Tuninetti</h3>
+                        <p class="text-xs text-red-500 uppercase font-semibold mt-1">Director y Profesor</p>
+                        <p class="text-sm text-gray-400 mt-1 uppercase">Salsa - Bachata</p>
+                    </article>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Profe 1 -->
+                    <article class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center hover:border-red-500/50 transition">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-tr from-red-500 to-yellow-300 p-1">
+                            <img src="./img/Claudia_Candellero.png" alt="Claudia Candellero" class="w-full h-full object-cover object-[center_10%] rounded-full">
+                        </div>
+                        <h3 class="font-bold text-white text-xl uppercase">Claudia Candellero</h3>
+                        <p class="text-sm text-gray-400 mt-1 uppercase">Salsa - Bachata - Jazz - Infantes</p>
+                    </article>
+
+                    <!-- Profe 2 -->
+                    <article class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center hover:border-red-500/50 transition">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-tr from-red-500 to-yellow-300 p-1">
+                            <img src="./img/Federico_Tuninetti.png" alt="Federico Tuninetti" class="w-full h-full object-cover object-[left_10%] rounded-full">
+                        </div>
+                        <h3 class="font-bold text-white text-xl uppercase">Federico Tuninetti</h3>
+                        <p class="text-sm text-gray-400 mt-1 uppercase">Salsa - Bachata - Reggaetón</p>
+                    </article>
+
+                    <!-- Profe 3 -->
+                    <article class="bg-gray-900/80 p-6 rounded-2xl border border-gray-800 text-center hover:border-red-500/50 transition">
+                        <div class="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-tr from-red-500 to-yellow-300 p-1">
+                            <img src="./img/Pupa.png" alt="Luisana Stefanini" class="w-full h-full object-cover rounded-full">
+                        </div>
+                        <h3 class="font-bold text-white text-xl uppercase">Luisana Stefanini</h3>
+                        <p class="text-sm text-gray-400 mt-1 uppercase">Street Dance</p>
+                    </article>
+                </div>
+            </div>
         </section>
-        <section id="tienda">
-            <h3>Tutto Danza</h3>
+        <section id="servicios">
+            <header>
+                <span>Ecosistema Habana Mix</span>
+                <h2>Comercio & Noches Sociales</h2>
+                <p>Todo lo que necesitas para tu indumentaria y noches sociales</p>
+            </header>
+
+            <!-- Grillas Publicitarias -->
+            <div>
+                <article>
+                    <div>
+                        <div>
+                            <span>Lamadrid 740</span>
+                            <span>🛍️</span>
+                        </div>
+
+                        <h3>Tutto Danza - Tienda Oficial</h3>
+                        <p>Tienda especializada en indumentaria y calzado de baile. Encontrá remeras oficiales, buzos, zapatos de baile, sandalias con piedras y confección de trajes de baile a medida para tus presentaciones.</p>
+
+                        <ul>
+                            <li><span>✓</span>Calzados importados y nacionales de baile</li>
+                            <li><span>✓</span>Indumentaria exclusiva Habana Mix</li>
+                            <li><span>✓</span>Descuentos especiales para alumnos</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
             <article>
                 <h3>Remeras</h3>
                 <h4>Remeras de la academia</h4>
@@ -179,25 +232,6 @@
             <article>
                 <h3>Sandalias</h3>
                 <h4>Sandalias de baile</h4>
-            </article>
-        </section>
-        <section id="mojitos">
-            <h3>Mojitos Resto Bar</h3>
-            <article>
-                <h3>Apertura</h3>
-                <h4>Jueves 22:00</h4>
-            </article>
-            <article>
-                <h3>Clásico</h3>
-                <h4>Ron, hierbabuena, azúcar, soda y lima</h4>
-            </article>
-            <article>
-                <h3>Frutilla</h3>
-                <h4>Ron, hierbabuena, azúcar, soda y frutilla</h4>
-            </article>
-            <article>
-                <h3>Maracuyá</h3>
-                <h4>Ron, hierbabuena, azúcar, soda y maracuyá</h4>
             </article>
         </section>
     </main>

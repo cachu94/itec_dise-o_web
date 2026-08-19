@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalle de inscripción para el Pack Dúo de Habana Mix">
+    <title>Pack Duo | Inscripción - Habana Mix</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts: Comfortaa y Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <!-- Configuración de Colores y Fonts -->
+    <style type="text/tailwindcss">
+        @theme {
+            --font-logo: 'Comfortaa', cursive;
+            --font-sans: 'Montserrat', sans-serif;
+        }
+
+        .container-base {
+            @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+        }
+
+        .form-input {
+            @apply w-full bg-black/60 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:border-orange-400 focus:ring-1 focus:ring-orange-400 transition duration-200;
+        }
+
+        .form-label {
+            @apply block text-xs font-bold uppercase tracking-wider text-gray-300 mb-2;
+        }
+
+        .btn-gradient {
+            @apply inline-block text-center bg-gradient-to-r from-red-500 to-orange-400 hover:opacity-90 text-white font-bold py-3.5 px-8 rounded-xl shadow-lg hover:scale-[1.02] transition duration-300 cursor-pointer;
+        }
+    </style>
+</head>
+<body class="bg-black text-gray-100 font-sans antialiased selection:bg-red-500 selection:text-white flex flex-col min-h-screen">
+    <!-- HEADER -->
+    <header class="bg-black/90 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo Habana Mix -->
+            <a href="index.html" class="font-logo text-2xl font-bold tracking-tight">
+                <span class="text-red-500">habana</span> <span class="text-orange-400">m</span><span class="text-yellow-300">ix</span>
+            </a>
+            <!-- MENU DE NAVEGACIÓN -->
+            <nav aria-label="Principal" class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-wider">
+                <a href="index.html#promos" class="hover:text-yellow-300 transition">Pases y Promos</a>
+                <a href="index.html#profes" class="hover:text-yellow-300 transition">Staff</a>
+                <a href="index.html#servicios" class="hover:text-yellow-300 transition">Servicios</a>
+            </nav>
+
+            <!-- Botón de Acción -->
+            <a href="index.html#promos" class="text-sm font-semibold text-gray-400 hover:text-red-500 transition flex items-center gap-1">
+                ← Volver al Inicio
+            </a>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <div>
+            <nav>
+                <ol>
+                    <li><a>Inicio</a></li>
+                    <li><span>/</span></li>
+                    <li><a>Promociones</a></li>
+                    <li><span>/</span></li>
+                    <li><a>Pack Dúo</a></li>
+                </ol>
+            </nav>
+
+            <div>
+                <article>
+                    <header>
+                        <span>
+                            Promo Destacada
+                        </span>
+                        <h1>Pack Dúo</h1>
+                        <p>El combo perfecto para combinar dos disciplinas de nuestra grilla de ritmos latinos y urbanos.</p>
+                    </header>
+
+                    <section>
+                        <div>
+                            <span>$24.000</span>
+                            <span>/ cuota mensual</span>
+                        </div>
+                        <p>Ahorrás un 20% en comparación con 2 disciplinas individuales.</p>
+                    </section>
+
+                    <section>
+                        <h2>¿Qué incluye este pase?</h2>
+                        <ul>
+                            <li><span>✓</span> <span><strong>4 clases semanales</strong> en total (2 por ritmo).</span></li>
+                            <li><span>✓</span><span>Flexibilidad de horarios según la grilla semanal.</span></li>
+                            <li><span>✓</span><span>Acceso a prácticas libres guiadas los viernes.</span></li>
+                            <li><span>✓</span><span>Carnet de socio digital sin costo de emisión.</span></li>
+                        </ul>
+                    </section>
+                </article>
+
+                <section>
+                    <header>
+                        <h2>Formulario de Inscripción</h2>
+                        <p>Completá tus datos y seleccioná los estilos para reservar tu cupo.</p>
+                    </header>
+
+                    <form>
+
+                        <fieldset>
+                            <legend>
+                                1. Datos Personales
+                            </legend>
+
+                            <div>
+                                <div>
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" id="nombre" name="nombre" required placeholder="Ej: Facundo" class="form-input">
+                                </div>
+                                <div>
+                                    <label for="apellido" class="form-label">Apellido</label>
+                                    <input type="text" id="apellido" name="apellido" required placeholder="Ej: Giacri" class="form-input">
+                            </div>
+
+                            <div>
+                                <div>
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +54 9 11 1234-5678" class="form-input">
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <label for="nacimiento" class="form-label">Fecha Nacimiento</label>
+                                    <input type="date" id="nacimiento" name="fecha_nacimiento" required class="form-input">
+                                </div>
+                                <div>
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="Ej: facundo@example.com" class="form-input">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>
+                                2. Selección de Ritmos
+                            </legend>
+
+                            <div>
+                                <div>
+                                    <label for="ritmo1" class="form-label">Ritmo 1</label>
+                                    <select id="ritmo1" name="ritmo1" required class="form-input">
+                                        <option value="" disabled selected>Elegí una disciplina</option>
+                                        <option value="salsa">Salsa Cubana y Línea</option>
+                                        <option value="bachata">Bachata Sensual & Tradicional</option>
+                                        <option value="urbano">Street Dance / Urbano</option>
+                                        <option value="reggaeton">Reggaetón Coreográfico</option>
+                                        <option value="jazz">Danza Jazz</option>
+                                        <option value="pole">Pole Dance</option>
+                                        <option value="telas">Acrobacia en Telas</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="ritmo2" class="form-label">Ritmo 2</label>
+                                    <select id="ritmo2" name="ritmo2" required class="form-input">
+                                        <option value="" disabled selected>Elegí una disciplina</option>
+                                        <option value="salsa">Salsa Cubana y Línea</option>
+                                        <option value="bachata">Bachata Sensual & Tradicional</option>
+                                        <option value="urbano">Street Dance / Urbano</option>
+                                        <option value="reggaeton">Reggaetón Coreográfico</option>
+                                        <option value="jazz">Danza Jazz</option>
+                                        <option value="pole">Pole Dance</option>
+                                        <option value="telas">Acrobacia en Telas</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div>
+                            <button>Suscribirme</button>
+                            <p>Al suscribirte, coordinaremos el método de pago y tus horarios por WhatsApp.</p>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <small>© 2026 Habana Mix. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+</body>
+</html>

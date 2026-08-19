@@ -60,43 +60,43 @@
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <div>
-            <nav>
-                <ol>
-                    <li><a>Inicio</a></li>
+    <main class="flex-grow py-12 md:py-20">
+        <div class="container-base">
+            <nav aria-label="Breadcrumb" class="mb-8 text-sm text-gray-400">
+                <ol class="flex items-center space-x-2">
+                    <li><a href="index.html" class="hover:text-yellow-300 transition">Inicio</a></li>
                     <li><span>/</span></li>
-                    <li><a>Promociones</a></li>
+                    <li><a href="index.html#promos" class="hover:text-yellow-300 transition">Promociones</a></li>
                     <li><span>/</span></li>
-                    <li><a>Pack Dúo</a></li>
+                    <li class="text-orange-400 font-semibold" aria-current="page">Pack Dúo</li>
                 </ol>
             </nav>
 
-            <div>
-                <article>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <article class="lg:col-span-5 bg-gradient-to-b from-gray-900 to-black p-8 rounded-3xl border border-gray-800 shadow-2xl space-y-6">
                     <header>
-                        <span>
+                        <span class="inline-block bg-orange-400/10 border border-orange-400/30 text-orange-400 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-3">
                             Promo Destacada
                         </span>
-                        <h1>Pack Dúo</h1>
-                        <p>El combo perfecto para combinar dos disciplinas de nuestra grilla de ritmos latinos y urbanos.</p>
+                        <h1 class="text-3xl font-extrabold text-white">Pack Dúo</h1>
+                        <p class="text-gray-400 text-sm mt-2">El combo perfecto para combinar dos disciplinas de nuestra grilla de ritmos latinos y urbanos.</p>
                     </header>
 
-                    <section>
-                        <div>
-                            <span>$24.000</span>
-                            <span>/ cuota mensual</span>
+                    <section class="border-y border-gray-800/80 py-6">
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-4xl font-extrabold text-white">$24.000</span>
+                            <span class="text-gray-400 text-sm">/ cuota mensual</span>
                         </div>
-                        <p>Ahorrás un 20% en comparación con 2 disciplinas individuales.</p>
+                        <p class="text-gray-400 text-xs mt-1">Ahorrás un 20% en comparación con 2 disciplinas individuales.</p>
                     </section>
 
                     <section>
-                        <h2>¿Qué incluye este pase?</h2>
-                        <ul>
-                            <li><span>✓</span> <span><strong>4 clases semanales</strong> en total (2 por ritmo).</span></li>
-                            <li><span>✓</span><span>Flexibilidad de horarios según la grilla semanal.</span></li>
-                            <li><span>✓</span><span>Acceso a prácticas libres guiadas los viernes.</span></li>
-                            <li><span>✓</span><span>Carnet de socio digital sin costo de emisión.</span></li>
+                        <h2 class="text-sm font-bold uppercase tracking-wider text-yellow-300 mb-4">¿Qué incluye este pase?</h2>
+                        <ul class="space-y-3 text-gray-400 text-sm">
+                            <li class="flex items-start"><span class="text-red-500 font-bold mr-2">✓</span> <span><strong>4 clases semanales</strong> en total (2 por ritmo).</span></li>
+                            <li class="flex items-start"><span class="text-red-500 font-bold mr-2">✓</span><span>Flexibilidad de horarios según la grilla semanal.</span></li>
+                            <li class="flex items-start"><span class="text-red-500 font-bold mr-2">✓</span><span>Acceso a prácticas libres guiadas los viernes.</span></li>
+                            <li class="flex items-start"><span class="text-red-500 font-bold mr-2">✓</span><span>Carnet de socio digital sin costo de emisión.</span></li>
                         </ul>
                     </section>
                 </article>

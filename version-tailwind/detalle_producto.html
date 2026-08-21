@@ -101,20 +101,20 @@
                     </section>
                 </article>
 
-                <section>
-                    <header>
-                        <h2>Formulario de Inscripción</h2>
-                        <p>Completá tus datos y seleccioná los estilos para reservar tu cupo.</p>
+                <section class="lg:col-span-7 bg-gray-900/60 p-8 sm:p-10 rounded-3xl border border-gray-800 shadow-xl">
+                    <header class="mb-8">
+                        <h2 class="text-2xl font-bold text-white">Formulario de Inscripción</h2>
+                        <p class="text-sm text-gray-400 mt-1">Completá tus datos y seleccioná los estilos para reservar tu cupo.</p>
                     </header>
 
-                    <form>
+                    <form action="#" method="POST" class="space-y-6">
 
-                        <fieldset>
-                            <legend>
+                        <fieldset class="space-y-1 border-0 p-0 m-0">
+                            <legend class="text-sm font-bold uppercase tracking-wider text-yellow-300 pb-2 border-b border-gray-800 w-full mb-4">
                                 1. Datos Personales
                             </legend>
 
-                            <div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <label for="nombre" class="form-label">Nombre</label>
                                     <input type="text" id="nombre" name="nombre" required placeholder="Ej: Facundo" class="form-input">
@@ -122,16 +122,18 @@
                                 <div>
                                     <label for="apellido" class="form-label">Apellido</label>
                                     <input type="text" id="apellido" name="apellido" required placeholder="Ej: Giacri" class="form-input">
-                            </div>
+                                </div>
 
-                            <div>
+                            
                                 <div>
                                     <label for="telefono" class="form-label">Teléfono</label>
                                     <input type="tel" id="telefono" name="telefono" required placeholder="Ej: +54 9 11 1234-5678" class="form-input">
                                 </div>
-                            </div>
-
-                            <div>
+                                <div>
+                                    <label for="domicilio" class="form-label">Domicilio</label>
+                                    <input type="text" id="domicilio" name="domicilio" required placeholder="Ej: Lamadrid 720" class="form-input">
+                                </div>
+                            
                                 <div>
                                     <label for="nacimiento" class="form-label">Fecha Nacimiento</label>
                                     <input type="date" id="nacimiento" name="fecha_nacimiento" required class="form-input">
@@ -143,12 +145,12 @@
                             </div>
                         </fieldset>
 
-                        <fieldset>
-                            <legend>
+                        <fieldset class="space-y-4 my-4">
+                            <legend class="text-sm font-bold uppercase tracking-wider text-yellow-300 pb-2 border-b border-gray-800 w-full">
                                 2. Selección de Ritmos
                             </legend>
 
-                            <div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <label for="ritmo1" class="form-label">Ritmo 1</label>
                                     <select id="ritmo1" name="ritmo1" required class="form-input">
@@ -179,9 +181,9 @@
                             </div>
                         </fieldset>
 
-                        <div>
-                            <button>Suscribirme</button>
-                            <p>Al suscribirte, coordinaremos el método de pago y tus horarios por WhatsApp.</p>
+                        <div class="pt-4">
+                            <button type="submit" class="w-full btn-gradient">Suscribirme</button>
+                            <p class="text-sm text-gray-500 text-center mt-3">Al suscribirte, coordinaremos el método de pago y tus horarios por WhatsApp.</p>
                         </div>
                     </form>
                 </section>
@@ -190,9 +192,9 @@
     </main>
 
     <!-- footer -->
-    <footer>
-        <div>
-            <small>© 2026 Habana Mix. Todos los derechos reservados.</small>
+    <footer class="border-t border-gray-800">
+        <div class="container-base py-3 text-center text-sm text-gray-400">
+            <small>&copy; 2026 Habana Mix. Todos los derechos reservados.</small>
         </div>
     </footer>
 </body>
